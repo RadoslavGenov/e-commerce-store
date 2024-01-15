@@ -1,8 +1,15 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from 'react'
+import logo from './logo.svg'
+import './App.css'
+import { USER, apiInstance } from './api/api'
 
 function App() {
+  useEffect(() => {
+    apiInstance.get(`${USER}/65a3e1e04a7f3b08b8c5a510`).then((user) => {
+      console.log(user)
+    })
+  }, [])
+
   return (
     <div className="App">
       <header className="App-header">
@@ -20,7 +27,7 @@ function App() {
         </a>
       </header>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
