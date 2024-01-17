@@ -1,0 +1,9 @@
+.footer {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+}
+
+.space {
+  width: 100%;
+}
