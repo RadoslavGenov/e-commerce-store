@@ -6,7 +6,7 @@ import styles from './Register.module.css'
 
 const { Text } = Typography
 
-export const Register: React.FC = () => {
+const Register: React.FC = () => {
   const [open, setOpen] = useState(false)
   const [values, setValues] = useState<{ [key: string]: string }>(
     INITIAL_VALUES
@@ -95,3 +95,5 @@ export const Register: React.FC = () => {
     </>
   )
 }
+
+export default Register

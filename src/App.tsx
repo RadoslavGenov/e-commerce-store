@@ -1,14 +1,7 @@
-import Login from './sections/Login/Login'
-import { Register } from './sections/Register/Register'
-import styles from './App.module.css'
+import LandingPage from './pages/LandingPage/LandingPage'
 
 function App() {
-  return (
-    <div className={styles.app}>
-      <Login />
-      <Register />
-    </div>
-  )
+  return <LandingPage />
 }
 
 export default App

@@ -47,8 +47,8 @@ const Login: React.FC = () => {
         onOk={handleLogin}
         onCancel={handleCancel}
         footer={[
-          <div className={styles.loginButton}>
-            <Button key="submit" type="primary" onClick={handleLogin}>
+          <div key="submit" className={styles.loginButton}>
+            <Button type="primary" onClick={handleLogin}>
               Login
             </Button>
           </div>
